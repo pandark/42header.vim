@@ -1,0 +1,23 @@
+*42header.txt*  Add and update the 42 comment header at the top of your files
+
+Author:  Adrien Pachkoff <https://adrien.pachkoff.com/>
+License: Distributed under the MIT license. See the LICENSE file.
+
+Add the 42 comment header on top of your files and update it when the file
+is modified. The environment variables `$USER` and `$MAIL` are used in the
+header.
+The plugin uses *b:fortytwoheader_delimiters* if it is set, or relies
+on a hard-coded list of file types. E.g. to add Django template support: >
+  autocmd FileType htmldjango let b:fortytwoheader_delimiters=['{#', '#}', '*']
+<
+                                                *:FortyTwoHeader*
+:FortyTwoHeader               Add the comment header.
+
+The header is automatically updated when the |BufWritePre| autocommand is
+fired and the file has been modified.
+
+Add >
+  :nmap <f1> :Fortytwoheader<CR>
+<to your .vimrc/init.vim so you can add the header by pressing <f1> key.
+
+ vim:tw=78:et:ft=help:norl:
