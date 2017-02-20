@@ -1,7 +1,7 @@
 " 42header.vim - Add and update the 42 comment header at the top of your files
 
 " Maintainer:   Adrien Pachkoff <https://adrien.pachkoff.com/>
-" Version:      1.0
+" Version:      1.1
 
 if exists('g:loaded_42header') || &cp
   finish
