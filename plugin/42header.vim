@@ -176,7 +176,7 @@ function s:fortytwoheader()
   endif
 endfunction
 
-command! Fortytwoheader call s:fortytwoheader ()
+command! FortyTwoHeader call s:fortytwoheader ()
 
 " This part has moved to ../after/plugin/stdheader.vim
 "augroup fortytwoheader

@@ -17,7 +17,7 @@ The header is automatically updated when the |BufWritePre| autocommand is
 fired and the file has been modified.
 
 Add >
-  :nmap <f1> :Fortytwoheader<CR>
+  :nmap <f1> :FortyTwoHeader<CR>
 <to your .vimrc/init.vim so you can add the header by pressing <f1> key.
 
  vim:tw=78:et:ft=help:norl:
