@@ -56,7 +56,7 @@ let s:types   = {
       \['."', '".', '*'],
       \'^python\|ruby\|perl\|julia\|elixir\|r\|sh\|zsh\|snippets\|po$':
       \['#', '#', '*'],
-      \'^toml\|yaml\|dockerfile\|puppet$':
+      \'^make\|toml\|yaml\|dockerfile\|puppet$':
       \['#', '#', '*']
       \}
 
