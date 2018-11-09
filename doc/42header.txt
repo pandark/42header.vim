@@ -5,7 +5,8 @@ License: Distributed under the MIT license. See the LICENSE file.
 
 Add the 42 comment header on top of your files and update it when the file
 is modified. The environment variables `$USER` and `$MAIL` are used in the
-header.
+header, unless *b:fortytwoheader_user* and/or *b:fortytwoheader_mail* are
+defined, in which case they are used instead.
 The plugin uses *b:fortytwoheader_delimiters* if it is set, or relies
 on a hard-coded list of file types. E.g. to add Django template support: >
   autocmd FileType htmldjango let b:fortytwoheader_delimiters=['{#', '#}', '*']

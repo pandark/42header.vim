@@ -103,7 +103,11 @@ function s:line(n)
 endfunction
 
 function s:user()
-  let l:user = $USER
+  if exists('b:fortytwoheader_user')
+    let l:user = b:fortytwoheader_user
+  else
+    let l:user = $USER
+  endif
   if strlen(l:user) == 0
     let l:user = 'marvin'
   endif
@@ -111,7 +115,11 @@ function s:user()
 endfunction
 
 function s:mail()
-  let l:mail = $MAIL
+  if exists('b:fortytwoheader_mail')
+    let l:mail = b:fortytwoheader_mail
+  else
+    let l:mail = $MAIL
+  endif
   if strlen(l:mail) == 0
     let l:mail = 'marvin@42.fr'
   endif
